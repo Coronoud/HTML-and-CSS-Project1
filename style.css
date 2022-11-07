@@ -1,0 +1,95 @@
+html {
+    background: rgb(36, 41, 41);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    border: 1px solid red;
+    background-color: #141414;
+    opacity: 0.9;
+    background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; 
+}
+
+.wrapper header {
+    background: url("0x0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.headerBackground {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.navBar, .logoHeading{
+    display: grid;
+    place-content: center;
+}
+
+.navBar__Button {
+    position: absolute;
+    left: 100px;
+    top: 42px;
+    border: 2px solid white;
+    background: black;
+    width: 50px;
+    height: 50px;
+}
+
+.logoHeading__One, .logoHeading__Two {
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar ul {
+    border: 2px solid transparent;
+    font-size: 0.5rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.navBar li {
+    margin: 20px 20px;
+    border: 1px solid;
+    padding: 20px;
+    background: black;
+}
+
+.container {
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__AboutUs, .main__Opportunities {
+    border: 10px solid;
+    padding: 20px;
+    border-image-source: linear-gradient(#e66465, #9198e5);
+    border-image-slice: 1;
+    background: rgb(144, 146, 151);
+    width: fit-content;
+    margin: 10px 40px;
+    height: fit-content;
+    color: black;
+}
+main #questionMark {
+    
+}
+
+main {
+    display: flex;
+}
