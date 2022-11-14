@@ -47,7 +47,7 @@ body {
     font-size: 1rem;
 }
 
-.logoHeading__One, .logoHeading__Two {
+.logoHeading__one, .logoHeading__two {
     position: relative;
     top: 180px;
     display: flex;
@@ -62,16 +62,25 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
 }
 
 .navBar a {
     text-decoration: none;
+    color: black;
+    padding: 50px;
+}
+
+.navBar a:hover {
+    background: white;
+    padding: 50px;
 }
 
 .navBar li {
     color: black;
     display: grid;
     place-content: center;
+    height: 100%;
     padding: 0 30px;
 }
 
@@ -84,25 +93,25 @@ body {
     height: fit-content;    
 }
 
-.aboutUs__Heading {
+.aboutUs__heading {
     display: flex;
     justify-content: center;
     margin: 0;
     line-height: 150px;
 }
 
-.aboutUs__Paragraph {
+.aboutUs__paragraph {
     border: 5px solid black;
     background-image: url(people.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.aboutUs__Paragraph ul {
+.aboutUs__paragraph ul {
     list-style-position: inside;
 }
 
-.aboutUs__Paragraph li {
+.aboutUs__paragraph li {
     width: 60vw;
     height: fit-content;
     background: rgba(128, 128, 128, 0.753);
@@ -112,20 +121,20 @@ body {
     font-weight: bold;
 }
 
-.aboutUs__Paragraph li::marker { 
+.aboutUs__paragraph li::marker { 
     content: ">>";  
     color: blue;
     font-size: 2em;
 }
 
-.main__Opportunities {
+.opportunities {
     border: 1px solid red;
     margin: 200px 40px;
     height: fit-content;
     position: relative;
 }
 
-.main__Opportunities .main__Opportunitieswrap {
+.opportunities .opportunities__wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,13 +143,13 @@ body {
     margin: 0;
 }
 
-.main__Opportunitieswrap {
+.opportunities__wrap {
     display: flex;
     flex-wrap: wrap;
     background: rgba(68, 96, 253, 0.767);
 }
 
-.main__Opportunitieswrap > * {
+.opportunities__wrap > * {
     border: 1px solid white;
     position: relative;
     width: 500px;
@@ -151,7 +160,7 @@ body {
     place-content: center;
 }
 
-.main__Opportunities h2, h3 {
+.opportunities h2, h3 {
     display: flex;
     justify-content: center;
 }
@@ -193,7 +202,7 @@ body {
     background-size: cover
 }
 
-.main__Opportunitieswrap .cover {
+.opportunities__wrap .cover {
     background: rgba(0, 0, 0, 0.5);
     background-size: cover;
     width: 100%;
@@ -203,7 +212,7 @@ body {
     place-content: center;
 }
 
-.main__Opportunitieswrap .cover__Title {
+.opportunities__wrap .cover__title {
     background-color: black;
     position: relative;
     padding: 20px;
