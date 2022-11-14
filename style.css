@@ -1,19 +1,18 @@
 html {
-    background: rgb(36, 41, 41);
+    background: #fff;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    grid-template-rows: auto 1fr auto; 
+    min-height:100vh;
 }
 
 .wrapper {
-    border: 1px solid red;
-    background-color: #141414;
-    opacity: 0.9;
-    background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; 
 }
 
 .wrapper header {
@@ -24,7 +23,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    background-attachment: fixed;
 }
 
 .headerBackground {
@@ -33,19 +32,19 @@ html {
     height: 100%;
 }
 
-.navBar, .logoHeading{
+.logoHeading{
     display: grid;
     place-content: center;
+    color: white;
 }
 
-.navBar__Button {
-    position: absolute;
-    left: 100px;
-    top: 42px;
-    border: 2px solid white;
-    background: black;
-    width: 50px;
-    height: 50px;
+.navBar {
+    background: rgb(68, 96, 253);
+    font-family: inherit;
+}
+
+.firstHeading {
+    font-size: 1rem;
 }
 
 .logoHeading__One, .logoHeading__Two {
@@ -56,40 +55,160 @@ html {
 }
 
 .navBar ul {
-    border: 2px solid transparent;
-    font-size: 0.5rem;
+    font-size: 1rem;
     list-style-type: none;
+    height: 100px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.navBar a {
+    text-decoration: none;
 }
 
 .navBar li {
-    margin: 20px 20px;
-    border: 1px solid;
-    padding: 20px;
-    background: black;
+    color: black;
+    display: grid;
+    place-content: center;
+    padding: 0 30px;
 }
 
 .container {
-    height: 1500px;
+    height: 3000px;
+}
+
+.aboutUs {
+    background: rgb(216, 216, 218);
+    height: fit-content;    
+}
+
+.aboutUs__Heading {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    line-height: 150px;
+}
+
+.aboutUs__Paragraph {
+    border: 5px solid black;
+    background-image: url(people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutUs__Paragraph ul {
+    list-style-position: inside;
+}
+
+.aboutUs__Paragraph li {
+    width: 60vw;
+    height: fit-content;
+    background: rgba(128, 128, 128, 0.753);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.aboutUs__Paragraph li::marker { 
+    content: ">>";  
+    color: blue;
+    font-size: 2em;
+}
+
+.main__Opportunities {
+    border: 1px solid red;
+    margin: 200px 40px;
+    height: fit-content;
+    position: relative;
+}
+
+.main__Opportunities .main__Opportunitieswrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid white;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.main__Opportunitieswrap {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(68, 96, 253, 0.767);
+}
+
+.main__Opportunitieswrap > * {
+    border: 1px solid white;
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    place-content: center;
+}
+
+.main__Opportunities h2, h3 {
     display: flex;
     justify-content: center;
 }
 
-.main__AboutUs, .main__Opportunities {
-    border: 10px solid;
-    padding: 20px;
-    border-image-source: linear-gradient(#e66465, #9198e5);
-    border-image-slice: 1;
-    background: rgb(144, 146, 151);
-    width: fit-content;
-    margin: 10px 40px;
-    height: fit-content;
-    color: black;
-}
-main #questionMark {
-    
+
+#elem1 {
+    background-image: url(highereduc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-main {
-    display: flex;
+#elem2 {
+    background-image: url(vocational.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#elem3 {
+    background-image: url(school.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#elem4 {
+    background-image: url(adult.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#elem5 {
+    background-image: url(youth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#elem6 {
+    background-image: url(sport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.main__Opportunitieswrap .cover {
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+}
+
+.main__Opportunitieswrap .cover__Title {
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+
+
